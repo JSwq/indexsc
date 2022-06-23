@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SC-19</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
+    <!--VALIDATION INDEX-->
+    <script src="back-end/index_validation.js"></script>
+</head>
+<style>
+    .divider{
+        width: 100%;
+        height: 30px;
+    }
+    
+</style>
+<body>
+    <div class="header">
+        <header class="d-flex justify-content-center py-3">
+            <ul class="nav nav-pills">
+              <li class="nav-item" id="active-btn"><a href="#" class="nav-link active" aria-current="page">Home</a></li>
+              <li class="nav-item"><a href="#" class="nav-link">Más información</a></li>
+              <li class="nav-item"><a href="#" class="nav-link">Contratación</a></li>
+              <li class="nav-item"><a href="#" class="nav-link">Terminos y condiciones</a></li>
+              <li class="nav-item"><a href="#" class="nav-link">¿Quiénes somos?</a></li>
+            </ul>
+          </header>
+    </div>
+    <div class="sign in">
+        <div class="container col-xl-10 col-xxl-8 px-4 py-5">
+            <div class="row align-items-center g-lg-5 py-5">
+              <div class="col-lg-7 text-center text-lg-start">
+                <h1 class="display-4 fw-bold lh-1 mb-3">SC-19</h1>
+                <p class="col-lg-10 fs-4">Este es un prototipo, si notas o descubres un error por favor comicate con nosotros en el apartado de <a href="">Soporte técnico</a></p>
+              </div>
+              <div class="col-md-10 mx-auto col-lg-5">
+                <form class="p-4 p-md-5 border rounded-3 bg-light">
+                  <div class="form-floating mb-3">
+                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                    <label for="floatingInput">Clave de usuario</label>
+                  </div>
+                  <div class="form-floating mb-3">
+                    <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                    <label for="floatingPassword">PIN</label>
+                  </div>
+                  <div class="checkbox mb-3">
+                    <label>
+                      <input type="checkbox" value="remember-me"> Recuerdame
+                    </label>
+                  </div>
+                  <button class="w-100 btn btn-lg btn-primary" type="submit" id="enter_page" onclick="CaptureDataIndex()">Entrar</button>
+                  <hr class="my-4">
+                  <small class="text-muted">Al entrar aceptas nuestros <a href="">Terminos y condiciones.</a></small>
+                </form>
+              </div>
+            </div>
+          </div>
+    </div>
+    <div class="divider"></div>
+    <div class="footer">
+        <div class="container">
+            <footer class="py-5">
+              <div class="row">
+                <div class="col-6 col-md-2 mb-3">
+                  <h5>Empresas</h5>
+                  <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Información.</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Registrar mi empresa.</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Soporte técnico.</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Terminos y condiciones.</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Precios.</a></li>
+                  </ul>
+                </div>
+          
+                <div class="col-6 col-md-2 mb-3">
+                  <h5>Instituciones </h5>
+                  <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Información</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Registrar mi institución</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Soporte técnico</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Terminos y condiciones</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Precuios</a></li>
+                  </ul>
+                </div>
+          
+                <div class="col-6 col-md-2 mb-3">
+                  <h5>Usuario</h5>
+                  <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Entrar</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Registrate</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">¿Cómo ingresar?</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Terminos y condiciones</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Nuestro impacto a nivel laboral</a></li>
+                  </ul>
+                </div>
+          
+                <div class="col-md-5 offset-md-1 mb-3">
+                  <form>
+                    <h5>Suscribete y recibe novedades a tu correo :)</h5>
+                    <p>Al hacer enviar aceptas nuestras <a href="">Politicas de usuario.</a></p>
+                    <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                      <label for="newsletter1" class="visually-hidden">Email</label>
+                      <input id="newsletter1" type="text" class="form-control" placeholder="Email ">
+                      <button class="btn btn-primary" type="button">Enviar</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+          
+              <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+                <p>© 2022 Company, Inc. Todo los derechos reservados.</p>
+                <ul class="list-unstyled d-flex">
+                  <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"></use></svg></a></li>
+                  <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"></use></svg></a></li>
+                  <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"></use></svg></a></li>
+                </ul>
+              </div>
+            </footer>
+          </div>
+    </div>
+</body>
+</html>
